@@ -1,4 +1,4 @@
-let km = prompt("Km da percorrere?");
+let km = prompt("Quanti Km desideri percorrere?");
 let age = prompt("Quanti anni hai?");
 
 let pricePerKm = 0.21;
@@ -12,9 +12,9 @@ if ((km) && (age)){
   }
 
 
-    document.getElementById("my-output").innerHTML = "Il prezzo totale è " + totalPrice + "€.";
+    document.getElementById("my-output").innerHTML = "Il prezzo totale è " + totalPrice.toFixed() + "€.";
 }else{
-    document.getElementById("my-output").innerHTML = "Errore. Aggiorna la pagina e rispondi alle domande a schermo.";
+    document.getElementById("my-output").innerHTML = "Errore. Per calcolare il risultato aggiorna la pagina e rispondi alle domande a schermo.";
 }
 
 
